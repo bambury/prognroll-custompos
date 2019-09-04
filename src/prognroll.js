@@ -18,7 +18,7 @@
             var progressBar = $("<span>", {
                 class: "prognroll-bar"
             });
-            $(attachTo).prepend(progressBar);
+            $(settings.attachTo).prepend(progressBar);
 
             progressBar.css({
                 position: "fixed",
