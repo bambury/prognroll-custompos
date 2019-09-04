@@ -5,7 +5,8 @@
         var settings = $.extend({
             height: 5, // progress bar height
             color: "#50bcb6", // progress bar background color
-            custom: false // if you make it true, you can add your custom div and see it's scroll progress on the page
+            custom: false, // if you make it true, you can add your custom div and see it's scroll progress on the page
+            attachTo: "body" //element to prepend the progress bar to
         }, options);
 
         return this.each(function () {
@@ -17,7 +18,7 @@
             var progressBar = $("<span>", {
                 class: "prognroll-bar"
             });
-            $("body").prepend(progressBar);
+            $(attachTo).prepend(progressBar);
 
             progressBar.css({
                 position: "fixed",
