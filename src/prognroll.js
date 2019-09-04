@@ -22,7 +22,7 @@
             $(settings.attachTo).prepend(progressBar);
 
             progressBar.css({
-                position: "fixed",
+                position: settings.position,
                 top: 0,
                 left: 0,
                 width: 0,
